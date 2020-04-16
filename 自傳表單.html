@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <form method="get" action="registration.php">
+            帳號：<input type="text" name="id"><br>              <!--input type=控制項 text輸入文字 -->
+            性別：<input type="radio" name="gender" value="M">男 <!--input type若為radio則為單選選項-->
+            <input type="radio" name="gender" value="F">女
+            <br>
+
+            興趣：<input type="checkbox" name="interest" value="tv" checked>看電視   <!--input type若為checkbox則為多選選項-->
+            <input type="checkbox" name="interest" value="fish">釣魚
+            <input type="checkbox" name="interest" value="movie" checked>看電影<br>  <!--checked 預設打勾-->
+
+            居住地：<select name="county">         <!--select下拉式選單-->     
+            <option value="taoyuan">桃園</option>  <!--option 下拉式選單中的選項-->
+            <option value="hsinchu">新竹</option>
+            <option value="miaoli">苗栗</option>
+            
+        </select><br>
+            自傳：<br>
+            <textarea name="autobiography" rows="10" cols="50"></textarea><br> <!--文字方塊 cols為寬度 rows是高度-->
+            <input type="submit" value="註冊">  <!--submit為註冊 value加上文字-->
+            <input type="reset"  value="清除">  <!--reset為清除 value加上文字-->
+
+            </form> 
+    </body>
+</html>
